@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .nav_btn {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .result {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    gap: 20px;
+  }
+  
+  .user-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid silver;
+  }
+  
+  .user-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+
+
+  
+  .loading-spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 30px auto;
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .result {
+    display: none;
+  }
+  .nav_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  input{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(121, 121, 121) !important;
+    padding-left: 20px;
+    outline: none;
+  }
+  select{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(121, 121, 121) !important;
+    padding-left: 20px;
+    outline: none;
+  }

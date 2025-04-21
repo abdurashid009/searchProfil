@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Foydalanuvchilarni saralash</h1>
+        <div class="cards_btn">
+            <div class="nav_btn">
+                <select name="Sort" id="sortUser">
+                    <option value="name">Ism bo'yicha saralash</option>
+                    <option value="age">Yosh bo'yicha saralsh</option>
+                </select>
+                <input id="searchProfil" type="text" placeholder="Qidirish (ism boyicha)">
+            </div>
+            <div class="loading-spinner" id="loader"></div>
+            <div class="result">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
